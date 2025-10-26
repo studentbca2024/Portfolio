@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan's Portfolio</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(1, 1, 44);
+        color: white;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 70px;
+        background-color: rgb(4, 4, 71);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: rgb(150, 150, 245);
+        font-size: 1.02rem;
+
+    }
+
+    main hr {
+        border: 0;
+        background-color: #9c97f1;
+        height: 1.4px;
+        margin: 60px 84px;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 0;
+    }
+
+    .firstSection>div {
+        width: 30%;
+    }
+
+    .leftSection {
+
+        font-size: 3rem;
+
+    }
+
+    .buttons {
+        padding: 50px 0;
+    }
+
+    .leftSection .btn {
+
+        padding: 12px;
+        background-color: #0e1046;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 20px;
+        cursor: pointer;
+
+    }
+
+    .rightSection img {
+        width: 80%;
+    }
+
+    .purple {
+        color: rgb(148, 47, 243);
+    }
+
+    .text-gray {
+        color: gray;
+    }
+
+    #element {
+        color: rgb(148, 47, 243);
+    }
+
+    .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+    }
+
+    .secondSection h1 {
+        font-size: 1.9rem;
+    }
+
+    .secondSection .box {
+        background: white;
+        width: 77vw;
+        height: 2px;
+        margin: 56px 0;
+        display: flex;
+    }
+
+    .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 6vw;
+    }
+
+    .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+    }
+
+    .vertical-title {
+        position: relative;
+        top: 75px;
+        width: 150px;
+        font-size: 15px;
+
+    }
+
+    .vertical-desc {
+        position: relative;
+        top: 86px;
+        color: gray;
+        width: 150px;
+        font-size: 9px;
+    }
+
+    footer {
+        background-color: #12122c;
+
+    }
+
+    .footer {
+        display: flex;
+        padding: 23px 122px;
+        justify-content: space-evenly;
+
+    }
+
+    .footer ul {
+        list-style: none;
+    }
+
+    .footer>div {
+        width: 223px;
+    }
+
+    footer .footer-rights {
+        text-align: center;
+        color: gray;
+        padding: 12px 0;
+    }
+
+    @media screen and (max-width: 1400px) {
+        body {}
+
+        .box {
+            flex-direction: column;
+        }
+
+        .secondSection.vertical {
+            height: unset;
+        }
+
+        .vertical-title,
+        .vertical-desc {
+            left: 45px;
+        }
+
+        .secondSection.box {
+            width: 50vw;
+        }
+
+        nav {
+            flex-direction: column;
+        }
+
+        .secondSection {
+            width: 50vw;
+        }
+
+        .firstSection {
+            flex-direction: column-reverse;
+        }
+
+        .leftSection {
+            width: 100% !important;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .rightSection {
+            width: 721px !important;
+            display: flex;
+            justify-content: center;
+        }
+
+        .rightSection img {
+            width: 45vw;
+            margin-bottom: 73px;
+        }
+
+        .secondSection {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-top {
+            top: 133px;
+        }
+
+        body {
+            min-width: fit-content;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 141vh;
+        }
+
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Karan's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="purple">Karan</span></div>
+                <div>and I am a BCA Student</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection"><img src="PngItem_1127587.png"></div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far </span>
+            <h1>Work Experience</h1>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>
+                    Karan's Portfolio
+                </h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                    <li>
+                        Services
+                    </li>
+
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                    <li>
+                        Services
+                    </li>
+
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>
+                        Home
+                    </li>
+                    <li>
+                        About
+                    </li>
+                    <li>
+                        Contact
+                    </li>
+                    <li>
+                        Services
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; karansportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation!-->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Programmer', 'Graphics Designer', 'Web Designer', 'Vedio Editer'],
+            typeSpeed: 80,
+        });
+    </script>
+</body>
+
+</html>
