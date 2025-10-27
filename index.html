@@ -70,9 +70,7 @@
     }
 
     .leftSection {
-
         font-size: 3rem;
-
     }
 
     .buttons {
@@ -129,15 +127,10 @@
         height: 93px;
         width: 1px;
         background-color: white;
-        margin: 0 6vw;
+        margin: 0 100px;
     }
 
-    .image-top {
-        width: 23px;
-        position: relative;
-        top: -32px;
-        left: -9px;
-    }
+
 
     .vertical-title {
         position: relative;
@@ -182,7 +175,11 @@
     }
 
     @media screen and (max-width: 1400px) {
-        body {}
+        .secondSection {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         .box {
             flex-direction: column;
@@ -203,10 +200,6 @@
 
         nav {
             flex-direction: column;
-        }
-
-        .secondSection {
-            width: 50vw;
         }
 
         .firstSection {
@@ -233,26 +226,35 @@
             margin-bottom: 73px;
         }
 
-        .secondSection {
-
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
         .image-top {
             top: 133px;
         }
 
-        body {
-            min-width: fit-content;
+        .secondSection {
+            width: 50vw;
         }
 
-        .secondSection {
-            max-width: 80vw;
-            margin: auto;
-            height: 141vh;
-        }
+
+
+    }
+
+
+    .image-top {
+        width: 23px;
+        position: relative;
+        top: -32px;
+        left: -9px;
+    }
+
+    body {
+        min-width: fit-content;
+    }
+
+    .secondSection .vertical {
+        height: 93px;
+        width: 1px;
+        background-color: white;
+        margin: 0 6dvw;
 
     }
 </style>
@@ -279,8 +281,13 @@
                 <div>and I am a BCA Student</div>
                 <span id="element"></span>
                 <div class="buttons">
-                    <button class="btn">Download Resume</button>
-                    <button class="btn">Visit Github</button>
+                    <a href="resume.pdf" download target="_blank">
+                        <button class="btn">Download Resume</button>
+                    </a>
+                    <a href="https://github.com/studentbca2024" target="_blank">
+                        <button class="btn">Visit Github</button>
+                    </a>
+
                 </div>
             </div>
             <div class="rightSection"><img src="PngItem_1127587.png"></div>
@@ -288,7 +295,75 @@
         <hr>
         <section class="secondSection">
             <span class="text-gray">What I have done so far </span>
-            <h1>Work Experience</h1>
+            <h1>Technical Skills</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="cc.png" alt="">
+                    <div class="vertical-title">
+                        C
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore ducimus esse expedita laborum consectetur magni quae dignissimos incidunt numquam!
+                        Aspernatur incidunt laborum facilis?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="h.png" alt="">
+                    <div class="vertical-title">
+                        HTML & CSS
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore ducimus esse expedita laborum consectetur magni quae dignissimos incidunt numquam!
+                        Aspernatur incidunt laborum facilis?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="c.jfif" alt="">
+                    <div class="vertical-title">
+                        C++
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore ducimus esse expedita laborum consectetur magni quae dignissimos incidunt numquam!
+                        Aspernatur incidunt laborum facilis?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="j.png" alt="">
+                    <div class="vertical-title">
+                        Java
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore ducimus esse expedita laborum consectetur magni quae dignissimos incidunt numquam!
+                        Aspernatur incidunt laborum facilis?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="p.png" alt="">
+                    <div class="vertical-title">
+                        Python
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore ducimus esse expedita laborum consectetur magni quae dignissimos incidunt numquam!
+                        Aspernatur incidunt laborum facilis?
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="s.png" alt="">
+                    <div class="vertical-title">
+                        SQL
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                        Tempore ducimus esse expedita laborum consectetur magni quae dignissimos incidunt numquam!
+                        Aspernatur incidunt laborum facilis?
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
@@ -358,7 +433,7 @@
     <!-- Setup and start animation!-->
     <script>
         var typed = new Typed('#element', {
-            strings: ['Web Developer', 'Programmer', 'Graphics Designer', 'Web Designer', 'Vedio Editer'],
+            strings: ['BCA Student', 'Creative Technologist', 'Video Editor', 'Passionate Problem Solver', 'Learning to Build the Future'],
             typeSpeed: 80,
         });
     </script>
