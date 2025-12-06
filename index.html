@@ -78,7 +78,6 @@
     }
 
     .leftSection .btn {
-
         padding: 12px;
         background-color: #0e1046;
         color: white;
@@ -87,6 +86,11 @@
         font-size: 20px;
         cursor: pointer;
 
+    }
+    .btn:hover{
+      box-shadow: 2px 2px 10px rgb(62, 62, 233);
+      background-color: #000000;
+      transition: 1s;
     }
 
     .rightSection img {
@@ -103,6 +107,7 @@
 
     #element {
         color: rgb(148, 47, 243);
+
     }
 
     .secondSection {
@@ -135,20 +140,21 @@
         top: 75px;
         width: 150px;
         font-size: 15px;
-
+        color:white;
     }
 
     .vertical-desc {
         position: relative;
         top: 86px;
-        color: gray;
-        width: 150px;
+        color: rgb(197, 194, 194);
+        width: 160px;
         font-size: 13px;
+        display: flex;
+        align-items: flex-start;
     }
 
     footer {
         background-color: #12122c;
-
     }
 
     .footer {
@@ -173,6 +179,9 @@
     }
 
     @media screen and (max-width: 1400px) {
+      .footer-rights{
+        display: none;
+      }
         .secondSection {
             display: flex;
             flex-direction: column;
@@ -190,6 +199,7 @@
         .vertical-title,
         .vertical-desc {
             left: 45px;
+            top: -63px;
         }
 
         .secondSection.box {
@@ -231,7 +241,6 @@
         .secondSection {
             width: 50vw;
         }
-
     }
 
     .image-top {
@@ -250,7 +259,6 @@
         width: 1px;
         background-color: white;
         margin: 0 6dvw;
-
     }
 </style>
 
@@ -298,9 +306,10 @@
                         C
                     </div>
                     <div class="vertical-desc">
-                        My core coding foundation was built during Semester I by successfully navigating the initial
-                        complexity of C Programmming, a skill I learned under the insightful guidance of Rahul Sir from
-                        Gondia.
+                        My coding foundation was built in
+                        Semester I while learning C
+                        programming under the
+                        guidance of Rahul Sir.
                     </div>
                 </div>
                 <div class="vertical">
@@ -309,9 +318,8 @@
                         HTML & CSS
                     </div>
                     <div class="vertical-desc">
-                        During Semester II, I mastered responsive design and front-end structure by gaming proficiency
-                        in HTML5 and CSS3.Can
-                        efficiently translate into engaging web layouts.
+                      In Semester II, I gained proficiency in HTML5 and CSS3, enabling me to create responsive and engaging web layouts.
+
                     </div>
                 </div>
                 <div class="vertical">
@@ -320,9 +328,9 @@
                         C++
                     </div>
                     <div class="vertical-desc">
-                        Also in Semister II, I built on the C foundation to effectively grasp Object-Oriented
-                        Programming (OOP) principles in C++
-                        enabling the development of scalable and reusable code.
+                        In Semester II, I strengthened my C
+                         foundation and learned OOP 
+                        concepts in C++, developing scalable and reusable code.
                     </div>
                 </div>
                 <div class="vertical">
@@ -331,9 +339,10 @@
                         Java
                     </div>
                     <div class="vertical-desc">
-                        Expanding my backend capabilities in Semester III with Java, focusing on its strong OOP
-                        structure and vast ecosystem for developing
-                        robust, platform-independent enterprise-level software.
+                       In Semester III, I enhanced my 
+                       backend skills with Java, 
+                       leveraging its OOP features to build robust, 
+                       cross-platform applications.
                     </div>
                 </div>
                 <div class="vertical">
@@ -342,9 +351,9 @@
                         Python
                     </div>
                     <div class="vertical-desc">
-                        Semester II also saw me specializing in Python for its versatility in scripting and applicaion
-                        development, focusing on leveraging
-                        its power for data processing and automation tasks.
+                        In Semester II, I specialized in Python, 
+                        using its versatility for scripting, data processing,
+                         and automation.
                     </div>
                 </div>
                 <div class="vertical">
@@ -353,9 +362,9 @@
                         SQL
                     </div>
                     <div class="vertical-desc">
-                        In Semester III, I acquired strong proficiency in SQL to manage and manipulate relational data.
-                        Skilled in designing effective database schemas and writing complex, efficient queries.
-
+                     In Semester III, I gained proficiency in SQL, 
+                     designing efficient databases and writing complex queries
+                      for data management.
                     </div>
                 </div>
             </div>
@@ -373,6 +382,7 @@
         var typed = new Typed('#element', {
             strings: ['BCA Student', 'Creative Technologist', 'Full Stack Web Developer', 'Passionate Problem Solver', 'Learning to Build the Future'],
             typeSpeed: 80,
+            loop: true
         });
     </script>
 </body>
